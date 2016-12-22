@@ -1,0 +1,72 @@
+<!DOCUMENT>
+<html>
+	<title></title>
+	<head>
+			
+		</style>
+		<style>
+			body{
+				margin-top:10%;
+				margin: 10% 20% 0 20%;
+				width: 60%;
+				height: 600px;
+				background-color:#FDFEFE;
+			}
+			form{
+				border-radius: 10px;
+				border: 3px solid #F8F9F9;
+				padding:15px 5px 5px 10;
+				background-color: white;
+				font-style:italic;
+
+			}
+
+			button[type=button]{
+				color: black;
+				background-color:#D5DBDB ;
+				padding: 5px;
+				border-radius: 5px;
+				height: 30px;
+				width: 70px;
+				margin-top: 10px;
+			}
+
+			button[type=button]:hover{
+				background-color:#27AE60;
+				color: white;
+				cursor:hand;
+			}
+
+			input[type=text]{
+				margin-bottom: 20px;
+				line-height: unset;
+			}
+
+			input[type=text]:focus{
+				transition: 2s;
+				background-color:pink;
+			}
+
+		</style>
+
+	</head>
+	<body>
+		<center>
+			<header>
+				<h1>Contact Me</h3>
+			</header>
+			<form>
+				<h3>Please fill out the form below</h3><br>
+				 First Name:<br> 
+               <input type="text"  name="tname" placeholder="Your name" required /><br> 
+               Last Name:<br> 
+               <input type="text" placeholder="Your email" name="email" required><br> 
+               Class:<br> 
+               <textarea placeholder="Message Here" name="message" required ></textarea>
+               
+               <button type="submit">submit </button>
+			</form>
+		</center>
+	</body>
+
+</html>
