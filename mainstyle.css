@@ -16,6 +16,7 @@
 		}
 		a{
 			text-decoration: none;
+			
 		}
 
 		.detailsDiv{
@@ -131,4 +132,16 @@
 				background-image: url("blue-abstract-background.jpg");
 				padding-bottom: 10px;
 			}
+
+			.navs{
+				display: inline;
+				margin-right: 15px;
+				font-size: 20px;
+			}
+
+			.main{
+				/*width: 90%;*/
+				background-color:white;
+			}
+
 	
