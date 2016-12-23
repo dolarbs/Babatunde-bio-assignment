@@ -131,4 +131,10 @@
 				background-image: url("blue-abstract-background.jpg");
 				padding-bottom: 10px;
 			}
+
+			.main{
+				/*width: 90%;*/
+				background-color:white;
+			}
+
 	
