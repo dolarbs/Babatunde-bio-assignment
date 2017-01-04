@@ -7,12 +7,12 @@
 </head>
 <body>
 	<center>
-	<header><h1>MY RESUME</h1></header>
-		<h3><ul >
+	<header><h1 class="mHeader">MY RESUME</h1></header>
+		<h3 id="myheader"><ul >
 				<li class="navs"><a href="index.html">Index</a></li>
 				<li class="navs"><a href="aboutme.html">About Me</a></li>
 				<li class="navs"><a href="location.html">Location</a></li>
-				<li class="navs"><a href="resume2.html">Resume</a> </li>
+				<li class="navs"><a href="resume2.html" class="currentlink">Resume</a> </li>
 			</ul></h3>
 		<div class="contactDiv">
 			<h2>Babatunde Damilare Shoneye</h2>
@@ -39,7 +39,7 @@
 			</p>
 			<p><h4  class="subhead">WORK EXPERIENCE</h4>
 			<ul>
-				<li class="jobs"><h5>RightClick Limited, Lagos Nigeria (Programmer) May 2013 to Dec 2013</h5>
+				<li class="jobs"><h5>RightClick Limited, Lagos Nigeria (Programmer) <span class="jobPeriod">May 2013 - Dec 2013</span></h5>
 					 <ul>
 					 	<li>
 					 		Developed and maintained web application using Joomla and Asp.net.
@@ -50,7 +50,7 @@
 					 	<li>Database: MS SQL, MySql using Tables, views, stored procedures, functions and LINQs.</li>
 					 </ul>
 				</li>
-				<li class="jobs"><h5>BISM Limited Nigeria, Lagos, Nigeria (Programmer)   July 2011-Dec 2012</h5>
+				<li class="jobs"><h5>BISM Limited Nigeria, Lagos, Nigeria (Programmer)   <span class="jobPeriod">July 2011 - Dec 2012</span></h5>
 					 <ul>
 					 	<li>
 					 		Developed and maintained Audit software, Registry software and HR Software in windows and web using VS.net
@@ -62,7 +62,7 @@
 					 	<li>Report: Crystal Report, MS Report.</li>
 					 </ul>
 				</li>
-				<li class="jobs"><h5>Intteck Global Limited, Lagos, (Junior Software Engineer)  July 2008 – April 2011</h5>
+				<li class="jobs"><h5>Intteck Global Limited, Lagos, (Junior Software Engineer)<span class="jobPeriod">July 2008 - April 2011</span></h5>
 					 <ul>
 					 	<li>
 					 		Provided software support for over ten clients using the company’s insurance and accounting software packages (Gibs and Pro) in web using VS.net
@@ -79,7 +79,8 @@
 				
 			</p>
 			<p><h4  class="subhead">EDUCATION</h4>
-			<li class="jobs"><h5 class="jobs">Lagos State Polytechnic, Lagos, Nigeria  June 2013</h5>
+			<li class="jobs">
+				<h5 class="jobs">Lagos State Polytechnic, Lagos, Nigeria  <span class="jobPeriod">June 2013</span></h5>
 					 <ul>
 					 	<li style="text-align:left; margin-top: -20px">
 					 		 Bachelor of Science, Major, Computer Science.
@@ -90,7 +91,7 @@
 				
 			</p>
 			
-			
+			<a href="#">Go to top</a>
 		</div>	
 			
 			
@@ -102,19 +103,32 @@
 			<center>
 				<div id="connectme">
 					<a href="https://www.facebook.com/dareshow">
-						<img class="socialico" src="facebook_circle2.png">
+						<img class="socialico" src="facebook_circle2.png" title="facebook">
 					</a>
 					<a href="https://plus.google.com/u/0/explore">
-						<img class="socialico" src="google_circle.png">
+						<img class="socialico" src="google_circle.png" title="Google Plus">
 					</a>
 					<a href="https://www.linkedin.com/in/tunde-shoneye-20490792?trk=hp-identity-name">
-						<img class="socialico" src="linkedin_circle.png">
+						<img class="socialico" src="linkedin_circle.png" title="linkedin">
 					</a>
 					<a href="https://www.facebook.com/dareshow">
-						<img class="socialico" src="twitter_circle.png">
+						<img class="socialico" src="twitter_circle.png" title="Twitter">
 					</a>
 				</div>
 			</center>
 			<div id="copywrite"><sapn>Copyright  &copy</sapn></div>
 		</footer>
+
+		<script>
+			/**$("#Top").click(function(){
+ 			scroll(0,0);
+			});**/
+
+			$(document).ready(function() {
+    			$('a[href=#top]').click(function(){
+        		$('html, body').animate({scrollTop:0}, 'slow');
+        		return false;
+    		});
+})
+		</script>
 </html>
